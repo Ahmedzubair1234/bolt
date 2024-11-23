@@ -1,3 +1,5 @@
+import { Icons } from '@/components/ui/icons';
+
 export const DEPARTMENTS = [
   {
     id: 1,
@@ -38,6 +40,9 @@ export const DOCTORS = [
     department: 'Cardiology',
     image: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=300',
     specialization: 'Interventional Cardiology',
+    availability: 'Mon, Wed, Fri',
+    education: 'MD - Johns Hopkins University',
+    experience: '15+ years',
   },
   {
     id: 2,
@@ -45,6 +50,9 @@ export const DOCTORS = [
     department: 'Neurology',
     image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=300',
     specialization: 'Neurological Surgery',
+    availability: 'Tue, Thu, Sat',
+    education: 'MD - Stanford University',
+    experience: '12+ years',
   },
   {
     id: 3,
@@ -52,6 +60,9 @@ export const DOCTORS = [
     department: 'Orthopedics',
     image: 'https://images.unsplash.com/photo-1594824476967-48c8b964273f?q=80&w=300',
     specialization: 'Sports Medicine',
+    availability: 'Mon, Thu, Fri',
+    education: 'MD - Harvard Medical School',
+    experience: '10+ years',
   },
 ];
 
@@ -85,4 +96,5 @@ export const NAVIGATION_ITEMS = [
   { name: 'Find a Doctor', icon: 'User', href: '#doctors' },
   { name: 'Services', icon: 'Stethoscope', href: '#services' },
   { name: 'Test Results', icon: 'ClipboardList', href: '#results' },
+  { name: 'Dashboard', icon: 'LayoutDashboard', href: '#dashboard' },
 ];

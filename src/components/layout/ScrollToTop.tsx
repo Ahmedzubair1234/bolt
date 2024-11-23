@@ -8,7 +8,9 @@ export function ScrollToTop() {
 
   useEffect(() => {
     const toggleVisibility = () => {
-      setIsVisible(window.scrollY > 300);
+      const homeSection = document.getElementById('home');
+      const homeSectionBottom = homeSection?.getBoundingClientRect().bottom ?? 0;
+      setIsVisible(window.scrollY > homeSectionBottom);
     };
 
     window.addEventListener('scroll', toggleVisibility);
